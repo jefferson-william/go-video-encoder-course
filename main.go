@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
+
+	log "github.com/sirupsen/logrus"
 )
 
 func ProcessWorker(in chan int, worker int) {
@@ -15,6 +17,7 @@ func ProcessWorker(in chan int, worker int) {
 }
 
 func main() {
+	log.Info("Running")
 	concurrency := 8
 	in := make(chan int)
 	done := make(chan []byte)

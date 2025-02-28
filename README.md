@@ -12,6 +12,12 @@ Converter vídeos para MP4 de acordo com melhor formato de vídeo para playlist.
 - [] Enviar uma notificação via fila com as informações do vídeo convertido ou informando erro na conversão
 - [] Em caso de erro, enviadar a mensagem original a uma Dead Letter Exchange
 
+## Command
+
+```sh
+go mod init go-video-encoder-course
+```
+
 ## Input
 
 ```json
