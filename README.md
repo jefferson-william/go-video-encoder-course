@@ -22,8 +22,8 @@ go mod init go-video-encoder-course
 
 ```json
 {
-  "resource_id": "my-resource-id-can-be-a-uuid-type",
-  "file_path": "convite.mp4"
+  "resourceId": "my-resource-id-can-be-a-uuid-type",
+  "filePath": "convite.mp4"
 }
 ```
 
@@ -32,16 +32,16 @@ go mod init go-video-encoder-course
 ```json
 {
   "id": "<uuid>",
-  "output_bucket_path": "codeeducationtest",
+  "outputBucketPath": "codeeducationtest",
   "status": "COMPLETED",
   "video": {
-    "encoded_video_folder": "<uuid>",
-    "resource_id": "<uuid>",
-    "file_path": "convite.mp4"
+    "id": "<uuid>",
+    "resourceId": "<uuid>",
+    "filePath": "convite.mp4"
   },
-  "Error": "",
-  "created_at": "2020-05-27T19:43:34.850479-04:00",
-  "updated_at": "2020-05-27T19:43:38.081754-04:00"
+  "error": "",
+  "createdAt": "2020-05-27T19:43:34.850479-04:00",
+  "updatedAt": "2020-05-27T19:43:38.081754-04:00"
 }
 ```
 
@@ -50,8 +50,8 @@ go mod init go-video-encoder-course
 ```json
 {
   "message": {
-    "resource_id": "<uuid>",
-    "file_path": "convite.mp4"
+    "resourceId": "<uuid>",
+    "filePath": "convite.mp4"
   },
   "error": "Motivo do erro"
 }

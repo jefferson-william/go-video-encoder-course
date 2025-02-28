@@ -8,14 +8,14 @@ import (
 )
 
 type Job struct {
-	ID string `valid:"uuid"`
-	OutputBucketPath string `valid:"notnull"`
-	Status string `valid:"notnull"`
-	Video *Video `valid:"-"`
-	VideoID string `valid:"-"`
-	Error string `valid:"-"`
-	CreatedAt time.Time `valid:"-"`
-	UpdatedAt time.Time `valid:"-"`
+	ID string `json:"id" valid:"uuid" gorm:"type:uuid;primary_key"`
+	OutputBucketPath string `json:"outputBucketPath" valid:"notnull" gorm:"type:varchar(255)"`
+	Status string `json:"status" valid:"notnull" gorm:"type:varchar(255)"`
+	Video *Video `json:"video" valid:"-"`
+	VideoID string `json:"videoId" valid:"-" gorm:"column:video_id;type:uuid;notnull"`
+	Error string `json:"error" valid:"-"`
+	CreatedAt time.Time `json:"createdAt" valid:"-"`
+	UpdatedAt time.Time `json:"updatedAt" valid:"-"`
 }
 
 func init() {
